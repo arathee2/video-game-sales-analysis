@@ -315,7 +315,7 @@ sales %>%
   facet_wrap(~platform)
 
 sales %>%
-  ggplot(aes(x=user_score, y=log(global_sales))) +
+  ggplot(aes(x=user_count, y=log(global_sales))) +
   geom_jitter() +
   geom_smooth(method = "lm") +
   facet_wrap(~platform)
